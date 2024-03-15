@@ -141,7 +141,7 @@ const closeEditTaskModal = () => isEditModalOpened.value = false;
         justify-content: space-between;
 
         &.finished {
-            background-color: bisque;
+            background-color: $finished-color;
         }
 
         div {

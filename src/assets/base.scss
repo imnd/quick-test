@@ -90,6 +90,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+$finished-color: rgba(0, 0, 0, 0.05);
 $shadow-color: rgba(0, 0, 0, 0.33);
 $mask-color: rgba(0, 0, 0, 0.5);
 
@@ -98,9 +99,12 @@ $base-light-color: hsla(160, 100%, 37%, 0.2);
 
 $danger-background-color: #E31F24;
 $danger-color: #FFF;
+$danger-hover-color: #E31F24;
 
 $primary-background-color: #007BFF;
 $primary-color: #FFF;
+$primary-hover-color: #007BFF;
 
 $success-background-color: #28A745;
 $success-color: #FFF;
+$success-hover-color: #28A745;

@@ -28,6 +28,7 @@ button {
     transition: 0.4s;
     padding: 3px;
 }
+
 a {
     color: $base-color;
 }
@@ -35,33 +36,57 @@ a {
 button {
     padding: 0.3em 0.6em;
     cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: .1rem;
 
     &.danger {
         background-color: $danger-background-color;
         color: $danger-color;
-        border: none;
-        border-radius: .1rem;
+        border-color: $danger-background-color;
     }
 
     &.primary {
         background-color: $primary-background-color;
         color: $primary-color;
-        border: none;
-        border-radius: .1rem;
+        border-color: $primary-background-color;
     }
 
     &.success {
         background-color: $success-background-color;
         color: $success-color;
-        border: none;
-        border-radius: .1rem;
+        border-color: $success-background-color;
     }
+
     min-width: 6rem;
 }
+
 @media (hover: hover) {
-    a:hover,
-    button:hover {
-        background-color: $base-light-color;
+    button {
+        &:hover {
+            background-color: white;
+            border: 1px solid;
+        }
+        &.danger {
+            &:hover {
+                color: $danger-hover-color;
+                border-color: $danger-hover-color;
+            }
+        }
+
+        &.primary {
+            &:hover {
+                color: $primary-hover-color;
+                border-color: $primary-hover-color;
+            }
+        }
+
+        &.success {
+            &:hover {
+                color: $success-hover-color;
+                border-color: $success-hover-color;
+            }
+        }
     }
 }
 
