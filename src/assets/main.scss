@@ -1,0 +1,74 @@
+@import './base.scss';
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto 0 2rem;
+    padding: 2rem;
+    font-weight: normal;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+            height: 100px;
+        }
+    }
+}
+
+a,
+button {
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 3px;
+}
+a {
+    color: $base-color;
+}
+
+button {
+    padding: 0.3em 0.6em;
+    cursor: pointer;
+
+    &.danger {
+        background-color: $danger-background-color;
+        color: $danger-color;
+        border: none;
+        border-radius: .1rem;
+    }
+
+    &.primary {
+        background-color: $primary-background-color;
+        color: $primary-color;
+        border: none;
+        border-radius: .1rem;
+    }
+
+    &.success {
+        background-color: $success-background-color;
+        color: $success-color;
+        border: none;
+        border-radius: .1rem;
+    }
+    min-width: 6rem;
+}
+@media (hover: hover) {
+    a:hover,
+    button:hover {
+        background-color: $base-light-color;
+    }
+}
+
+@media (min-width: 1024px) {
+    #app {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        padding: 2rem 2rem 0;
+    }
+}
