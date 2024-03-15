@@ -43,10 +43,7 @@ onMounted(() => {
     window.addEventListener('keyup', function (event) {
         if (event.key === 'Escape') {
             emit('modal-close');
-        }/* else if (event.key === 'Enter' && event.ctrlKey === true) {
-            emit('modal-close');
-            emit('submit');
-        }*/
+        }
     });
 });
 
