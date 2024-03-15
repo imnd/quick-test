@@ -71,6 +71,9 @@
                     </div>
                 </form>
             </template>
+            <template #footer>
+                <button class="success" @click.stop="closeEditTaskModal">Close</button>
+            </template>
         </ModalComponent>
     </main>
 </template>
